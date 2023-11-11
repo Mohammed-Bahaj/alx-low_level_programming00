@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	char *str;
 	va_list spc;
 
-	va_star(spc, format);
+	va_start(spc, format);
 
 	i = 0;
 	while (format != NULL && format[i] != '\0')
@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 				check_stat = 0;
 				break;
 			case 'f':
-				printf("%f", va_arg(spc, int));
+				printf("%f", va_arg(spc, double));
 				check_stat = 0;
 				break;
 			case 'c':
