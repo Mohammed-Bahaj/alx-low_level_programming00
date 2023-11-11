@@ -10,9 +10,8 @@
 int _strlen(char *s)
 {
 	int i;
-	
-	i = 0;
 
+	i = 0;
 	while (s[i] != '\0')
 	{
 		i++;
@@ -20,6 +19,7 @@ int _strlen(char *s)
 
 	return (i);
 }
+
 /**
  * _strcpy - copies the string pointed to by src
  * including the terminating null byte (\0)
@@ -40,7 +40,7 @@ char *_strcpy(char *dest, char *src)
 		len++;
 	}
 
-	for (i = 0; i <len; i++)
+	for (i = 0; i < len; i++)
 	{
 		dest[i] = src[i];
 	}
