@@ -58,7 +58,7 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	size_t n, o, i;
+	unsigned int n, o, i;
 	dog_t *dog;
 
 	if (name == NULL || owner == NULL)
